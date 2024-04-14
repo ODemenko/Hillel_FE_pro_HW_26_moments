@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5">
+      <h1>Date of Birth Format Converter</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="dobForm">
+            <div class="form-group">
+              <label for="dobInput">Enter your date of birth (YYYY-MM-DD):</label>
+              <input type="text" class="form-control" id="dobInput" placeholder="YYYY-MM-DD">
+              <small id="dobHelp" class="form-text text-danger"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Convert</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h3>Converted Date of Birth:</h3>
+          <p id="convertedDOB"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>
